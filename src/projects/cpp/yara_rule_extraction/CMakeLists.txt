@@ -1,0 +1,2 @@
+add_executable(yara_rule_extraction main.cpp)
+target_link_libraries(yara_rule_extraction yaramod)

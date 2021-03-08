@@ -11,6 +11,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 option(POG_BUNDLED_RE2  "Use bundled re2"                   OFF)
 option(POG_BUNDLED_FMT  "Use bundled fmt"                   OFF)
 option(POG_EXAMPLES     "Build examples"                    OFF)
+option(POG_PROJECTS     "Build projects"                    OFF)
 option(POG_TESTS        "Build tests"                       OFF)
 option(POG_COVERAGE     "Enable coverage"                   OFF)
 option(POG_PIC          "Enable position independent code"  OFF)
@@ -87,6 +88,11 @@ endif()
 ## Build examples if requested.
 if(POG_EXAMPLES)
 	add_subdirectory(examples)
+endif()
+
+## Build projects if requested.
+if(POG_PROJECTS)
+	add_subdirectory(projects)
 endif()
 
 ## Build tests if requested.

@@ -1,0 +1,1 @@
+add_subdirectory(yara_rule_extraction)

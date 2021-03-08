@@ -80,6 +80,11 @@ if(NOT TARGET yaramod)
 		add_subdirectory(examples)
 	endif()
 
+	# Projects.
+	if(YARAMOD_PROJECTS)
+		add_subdirectory(projects)
+	endif()
+
 	# Installation.
 	install(
 		TARGETS yaramod
